@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suite">
+	<listeners>
+		<listener class-name="utlity.realtime.Listenerclass"/>
+		<listener class-name="utlity.realtime.ListenerAnnotation"/>
+	</listeners>
+	<test name="test" thread-count="2" parallel="none">
+		<classes>
+			<class name="Datadriventest.Register"/>
+			<class name="Datadriventest.Login"/>
+			<class name="Datadriventest.search"/>
+		</classes>
+	</test>
+</suite>

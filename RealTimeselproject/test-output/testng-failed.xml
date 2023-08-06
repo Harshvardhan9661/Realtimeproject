@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]">
+  <listeners>
+    <listener class-name="utlity.realtime.Listenerclass"/>
+    <listener class-name="utlity.realtime.ListenerAnnotation"/>
+  </listeners>
+  <test thread-count="5" name="test(failed)">
+    <classes>
+      <class name="Datadriventest.search">
+        <methods>
+          <include name="setup1"/>
+          <include name="setup"/>
+          <include name="searchmethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Datadriventest.search -->
+      <class name="Datadriventest.Register">
+        <methods>
+          <include name="setup1"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="Registermethod"/>
+        </methods>
+      </class> <!-- Datadriventest.Register -->
+      <class name="Datadriventest.Login">
+        <methods>
+          <include name="setup1"/>
+          <include name="loginmethod"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Datadriventest.Login -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [suite] -->
